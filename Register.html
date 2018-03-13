@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<!-- <form>
+	<label>
+		First Name:
+			<input name="first name" type="text" placeholder="John" required> 
+	</label>
+	<label>
+		Last Name:
+			<input name="last name" type="text" placeholder="Smith" required> 
+	</label>
+	<label>
+		<p>Male
+			<input name="Gender" type="radio" value="MALE">
+		Female
+			<input name="Gender" type="radio" value="FEMALE">
+		Other
+			<input name="Gender" value="OTHER" type="radio"> 
+		</p>
+	</label>
+
+	<label>
+		Email:
+			<input type="email" placeholde="your email" required>
+		Password:
+			<input type="password" minlength="5"
+       maxlength="10" required>
+	</label>
+
+<p><label>
+		Birthday:
+			<select>
+				<option>Month</option>
+				<option>July</option>
+				<option>August</option>
+				<option>September</option>
+			</select>
+			<select>
+				<option>Day</option>
+				<option>22</option>
+				<option>23</option>
+				<option>24</option>
+			</select>
+			<select>
+				<option>Year</option>
+				<option>1991</option>
+				<option>1992</option>
+				<option>1993</option>
+			</select>
+</p>
+<p>I agree to the terms and conditions:
+	<input type="checkbox">
+
+</p>
+
+	</label>
+
+
+
+
+
+<input type="submit">
+	</label>
+
+</form> -->
+
+<!-- Solution Below -->
+
+<form>
+	<label for="first">First Name:</label>
+	<input name="first" id="first" type="text" placeholder="John" required>
+	<label for="last">Last Name:</label>
+	<input name="last" id="last" type="text" placeholder="Smith" required>
+
+<div>
+	<label for="male">Male</label>
+	<input id="male" name="gender" type="radio" value"male">
+	<label for="female">Female</label>
+	<input id="female" name="gender" type="radio" value"female">
+	<label for="other">Other</label>
+	<input id="other" name="gender" type="radio" value"other">
+</div>
+
+<div>
+	<!-- using second method of label where we nest the data instead of "for/id"; either method works here -->
+	<label>
+		Email:
+			<input type="email" placeholder="your email" required>
+
+	</label>
+	
+	<label>
+		Password:
+			<input name="password" type="password" pattern=".{5,10}" required title="Passowrd must be 5 to 10 characters">
+	</label>
+</div>
+
+<div>
+	<label>
+		Birthday:
+		<select name="month">
+			<option>Month</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+		</select>
+
+		<select name="day">
+			<option>Day</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+		</select>
+
+		<select name="year">
+			<option>Year</option>
+			<option>1991</option>
+			<option>1992</option>
+			<option>1993</option>
+		</select>
+	</label>
+</div>
+
+<div>
+	<label for="agreed"> I agree to the terms and conditions: </label>
+	<input id=agreed" name="agreed" type="checkbox">
+</div>
+
+<input type="Submit">
+</form>
+
+
+</body>
+</html>
